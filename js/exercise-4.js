@@ -1,5 +1,5 @@
 const inputValue = document.querySelector('.data');
 const counter = document.querySelector('.result');
-inputValue.oninput = event => {
+inputValue.addEventListener('input', () => {
     counter.innerHTML = inputValue.value.length;
-}
+});
